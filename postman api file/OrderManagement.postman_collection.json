@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "10d9c41c-22f0-4582-81e3-1ead19fb83e4",
+		"name": "OrderManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@admin.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOrders",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNmMjBmOWYyYzA4MzEyYjM5NDMxZGU4ODc1YTNiZDc1Yjg2YTEyOTY3NGU3NmI1NzJlYzExOTI3NThlNGViNThiODIwY2RmZDVhMjU2ZmUyIn0.eyJhdWQiOiIxIiwianRpIjoiM2YyMGY5ZjJjMDgzMTJiMzk0MzFkZTg4NzVhM2JkNzViODZhMTI5Njc0ZTc2YjU3MmVjMTE5Mjc1OGU0ZWI1OGI4MjBjZGZkNWEyNTZmZTIiLCJpYXQiOjE1OTc2NDI4MzUsIm5iZiI6MTU5NzY0MjgzNSwiZXhwIjoxNjI5MTc4ODM1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.BjQDoUNk1c-R0LYUBUdEGyK6r6Af_iiIj0uqpeyGgzf0msCV2ytD0Il37qDTVx1X_UllYE0iIGQPlBxxk7XtLGGsYOcohrMUl2RDSCoQKpjKerhxa8wu25RlpSFGOpcPGqTr5bsE5hcHMUqtLvPlbQhcIjM8n5VOrBklp-iz2ScYZkThFNYvViMhqS5m5CIpGYrOl16lnYDAfZqSOjubN6N54l4a_PT_ZIR1wGUUn09C9K3nOaOlRhmRpBcAOEZmP9A9VsTjm67IPfsa6AxrzjBfT4QZODyVicuEmcRz_LIO8lASFsmYPiUDIQvgLNNHF1fP2862uIcods_ssUBChL6f--7gdhVxxVCxCf6nrXqBaZOpLa5J-4eXXf-SCkwZm9plaFrsuBgs0341qC4QqulIlT2LyYOZJXP4JQ7kjhKk1W6JSh8dMAqqKGQBCGMOGRQwmws7_-76DqC_sTgQjrWe9PwV7ADeTdw0KZT2Pu1NUIekR0pVpcYgjbtYCid2XE_Ls9iWw1KJ0B4f8XBZsBvrtlSLzb37rb9K6SFunJVDXNt_hi1iI3CvWUmzztAUsHcN4OnBizNXlZfN2u7JYKa3EOBmB59t3OvadGFzq5mil43O5I5aN33bxMczw_is9Xc43tbc8Ry_IJS6a7TIdpgO-sXfnY0om-lVpfXcRMQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/orders",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
