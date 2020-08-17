@@ -11,6 +11,8 @@
 - That's it: launch the main URL. 
 - You can login to adminpanel with default credentials __admin@admin.com__ - __password__
 - Add Products and Orders from the menu
+- Postman Api file contains the postman collection file that has the login and getOrders requests
+
 
 
 
